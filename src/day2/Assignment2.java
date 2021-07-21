@@ -32,6 +32,6 @@ public class Assignment2 {
         }
 
         //print final max value
-        System.out.printf("Maximum number found: %d at (%d,%d)", maxNumber, maxX, maxY);
+        System.out.printf("Maximum number found: %d at (%d,%d)\n", maxNumber, maxX, maxY);
     }
 }
