@@ -14,7 +14,7 @@ public class FileAppender {
     public void runBuffStreamAppend(String source, String destination) {
         String relativePath = source;
         try (BufferedReader buf = new BufferedReader(new FileReader(relativePath))) {
-            //modified from pramods function to get all lines, and replace newline characters, and in append mode
+            //modified from pramod's function to get all lines, and replace newline characters, and in append mode
             Files.write(Paths.get(destination), buf.lines().collect(Collectors.joining(System.lineSeparator())).getBytes(), StandardOpenOption.APPEND);
         } catch (IOException e) {
             e.printStackTrace();

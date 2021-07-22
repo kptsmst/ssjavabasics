@@ -1,0 +1,78 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "SSBasics_7ee9568d"
+        },
+        {
+            "type": "java",
+            "name": "Launch AssignmentOne",
+            "request": "launch",
+            "mainClass": "com.ss.jbkt.daythree.AssignmentOne",
+            "projectName": "SSBasics_7ee9568d"
+        },
+        {
+            "type": "java",
+            "name": "Launch AssignmentThree",
+            "request": "launch",
+            "mainClass": "com.ss.jbkt.daythree.AssignmentThree",
+            "projectName": "SSBasics_7ee9568d",
+            "args": "s"
+        },
+        {
+            "type": "java",
+            "name": "Launch AssignmentTwo",
+            "request": "launch",
+            "mainClass": "com.ss.jbkt.daythree.AssignmentTwo",
+            "projectName": "SSBasics_7ee9568d"
+        },
+        {
+            "type": "java",
+            "name": "Launch PyramidPrinter",
+            "request": "launch",
+            "mainClass": "day1.PyramidPrinter",
+            "projectName": "SSBasics_7ee9568d"
+        },
+        {
+            "type": "java",
+            "name": "Launch RandomNumberGuessingGame",
+            "request": "launch",
+            "mainClass": "day1.RandomNumberGuessingGame",
+            "projectName": "SSBasics_7ee9568d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assignment1",
+            "request": "launch",
+            "mainClass": "day2.Assignment1",
+            "projectName": "SSBasics_7ee9568d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assignment2",
+            "request": "launch",
+            "mainClass": "day2.Assignment2",
+            "projectName": "SSBasics_7ee9568d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assignment3",
+            "request": "launch",
+            "mainClass": "day2.Assignment3",
+            "projectName": "SSBasics_7ee9568d"
+        }
+    ]
+}
