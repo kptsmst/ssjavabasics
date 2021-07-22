@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch AssignmentOne",
+            "request": "launch",
+            "mainClass": "com.ss.jbkt.dayfour.AssignmentOne",
+            "projectName": "SSBasics_7ee9568d"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
