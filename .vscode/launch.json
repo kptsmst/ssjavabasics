@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch AssignmentThree",
+            "request": "launch",
+            "mainClass": "com.ss.jbkt.dayfour.AssignmentThree",
+            "projectName": "SSBasics_7ee9568d"
+        },
+        {
+            "type": "java",
             "name": "Launch AssignmentTwo",
             "request": "launch",
             "mainClass": "com.ss.jbkt.dayfour.AssignmentTwo",
