@@ -11,7 +11,7 @@ public class AssignmentOne {
     }
 
     public static void basicLambdas() {
-        String[] aFewStrings = {"java","echo","smoothstack","pramod","kevin","saturday", "july", "engine","Epsilon"};
+        String[] aFewStrings = {"java","echo","smoothstack","pramod","kevin","saturday", "july", "engine","Epsilon", "bob"};
         List<String> asAList = Arrays.asList(aFewStrings);
         
         System.out.print("List at initialization: ");
@@ -38,6 +38,10 @@ public class AssignmentOne {
         System.out.print("List after bringing `e`s to the front: ");
         System.out.println(asAList);
         */
+
+        Arrays.sort(aFewStrings, (s1,s2) -> Utils.compare(s1, s2));
+        System.out.print("List after bringing `e`s to the front (with static helper): ");
+        System.out.println(asAList);
     }
 
     public static void sortArrayListByLength (List<String> aList) {
