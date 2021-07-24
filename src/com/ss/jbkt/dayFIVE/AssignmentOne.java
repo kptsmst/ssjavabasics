@@ -10,7 +10,7 @@ public class AssignmentOne {
         basicLambdas();
     }
 
-    public static void basicLambdas()) {
+    public static void basicLambdas() {
         String[] aFewStrings = {"java","echo","smoothstack","pramod","kevin","saturday", "july", "engine","Epsilon"};
         List<String> asAList = Arrays.asList(aFewStrings);
         
@@ -32,6 +32,12 @@ public class AssignmentOne {
         sortArrayListByFirstChar(asAList);
         System.out.print("List after sorting by first character: ");
         System.out.println(asAList);
+
+        /*
+        Arrays.sort(asAList, (s1, s2)->Utils.LowercaseEFirstStringCompare(s1,s2));
+        System.out.print("List after bringing `e`s to the front: ");
+        System.out.println(asAList);
+        */
     }
 
     public static void sortArrayListByLength (List<String> aList) {
