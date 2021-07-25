@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Recursion",
+            "request": "launch",
+            "mainClass": "com.ss.jbkt.weekone.Recursion",
+            "projectName": "SSBasics_7ee9568d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Functional",
+            "request": "launch",
+            "mainClass": "com.ss.jbkt.weekone.Functional",
+            "projectName": "SSBasics_7ee9568d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lambdas",
+            "request": "launch",
+            "mainClass": "com.ss.jbkt.weekone.Lambdas",
+            "projectName": "SSBasics_7ee9568d"
+        },
+        {
+            "type": "java",
             "name": "Launch AssignmentTwo",
             "request": "launch",
             "mainClass": "com.ss.jbkt.dayFIVE.AssignmentTwo",
