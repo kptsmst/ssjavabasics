@@ -1,17 +1,19 @@
 package com.ss.jbkt.dayFIVE;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class AssignmentOne {
 
     public static void main(String[] args) { 
-        basicLambdas();
+        basicStringLambdas();
+        java8StringsToIntsDemo();
+        filterDemo();
     }
 
-    public static void basicLambdas() {
-        String[] aFewStrings = {"java","echo","smoothstack","pramod","kevin","saturday", "july", "engine","Epsilon", "bob"};
+    public static void basicStringLambdas() {
+        String[] aFewStrings = {"java","echo","smoothstack","pramod","kevin","saturday", "july", "engine","Epsilon", "bob", "alpha"};
         List<String> asAList = Arrays.asList(aFewStrings);
         
         System.out.print("List at initialization: ");
@@ -43,6 +45,44 @@ public class AssignmentOne {
         System.out.print("List after bringing `e`s to the front (with static helper): ");
         System.out.println(asAList);
     }
+
+    public static void java8StringsToIntsDemo () {
+        List<Integer> ints = Arrays.asList(456, 34561, 123, 4, 7, 1234, 547);
+        String intsAsStr = labelEvenOddInts(ints);
+        System.out.print("Integer list: ");
+        System.out.println(ints);
+        System.out.print("Comma seperated labeled string: ");
+        System.out.println(intsAsStr);
+    }
+
+    public static String labelEvenOddInts (List<Integer> ints ) {
+        String str = ints.stream().map(IntObj->{
+            if (IntObj % 2 == 0) {
+                return "e"+String.valueOf(IntObj);
+            } else {
+                return "o"+String.valueOf(IntObj);
+            }
+        }).collect(Collectors.joining(","));
+        return str;
+    }
+
+    public static void filterDemo () {
+        List<String> strs = Arrays.asList("wow", "this", "are", "a", "list", "with", "low", "age");
+        List<String> filteredStrs = filterForThreeLettersStartingWith_a(strs);
+        System.out.print("Pre filter: ");
+        System.out.println(strs);
+        System.out.print("After filtering for three letters starting with a: ");
+        System.out.println(filteredStrs);
+    }
+
+    public static List<String> filterForThreeLettersStartingWith_a (List<String> originalList ) {
+        List<String> newList = originalList.stream().filter(str->{
+            if (str.length() == 3 && str.charAt(0) == 'a') return true;
+            return false;
+        }).collect(Collectors.toList());
+        return newList;
+    }
+
 
     public static void sortArrayListByLength (List<String> aList) {
         aList.sort((f,s)->f.length() - s.length());
