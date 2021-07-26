@@ -42,10 +42,6 @@ public class Lambdas {
         return x -> x%2 == 1;
     }
 
-    PerformOperation isEven () {
-        return x -> x%2 == 0;
-    }
-
     static PerformOperation isPrime () {
         return (x)->{
             x = Math.abs(x);

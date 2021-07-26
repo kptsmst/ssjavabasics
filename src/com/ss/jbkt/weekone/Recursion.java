@@ -2,6 +2,7 @@ package com.ss.jbkt.weekone;
 
 public class Recursion {
     public static void main(String[] args) {
+        //demoing groupsumclump
         System.out.println(groupSumClump(0, new int[]{1,2,3}, 7));
         System.out.println(groupSumClump(0, new int[]{1,2,2,5}, 2));
 

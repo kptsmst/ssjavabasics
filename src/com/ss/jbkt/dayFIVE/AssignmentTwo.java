@@ -15,6 +15,7 @@ import java.time.temporal.TemporalAdjusters;
 
 public class AssignmentTwo {
     public static void main(String[] args) {
+        //assignment two demo calls
         dateTimeQuestions();
         reportLengthOfEachMonthInYear(Year.of(2020));
         listMondaysOfMonth(Month.JULY);
@@ -48,6 +49,8 @@ public class AssignmentTwo {
         System.out.print("Using temporal adjuster: ");
         System.out.println(aBirthdayToTheNanosecond.with(TemporalAdjusters.previous(DayOfWeek.THURSDAY)));
         
+
+        //back and forth conversion between ZoneDateTime and Instant
         ZonedDateTime zoneDateTime = ZonedDateTime.now();
         Instant universalNow = Instant.ofEpochSecond(zoneDateTime.toEpochSecond());
         ZonedDateTime convertedBack = ZonedDateTime.ofInstant(universalNow, zoneDateTime.getZone());
